@@ -8,8 +8,8 @@ export default function MouseShadow() {
   useEffect(() => {
     const mouseShadow = document.querySelector(".mouse-shadow") as HTMLElement;
     document.addEventListener("mousemove", (e) => {
-      mouseShadow.style.left = e.screenX + "px";
-      mouseShadow.style.top = e.screenY + "px";
+      mouseShadow.style.left = e.clientX + "px";
+      mouseShadow.style.top = e.clientY + "px";
     });
   });
   return (
