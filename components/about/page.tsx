@@ -15,10 +15,15 @@ export default function About() {
           height={200}
           className="rounded-full mx-auto"
         />
-        <p className="text-4xl font-semibold tracking-wide">
-          Hi, I&apos;m Robin 👋
+
+        <p className="text-4xl font-semibold tracking-wide ">
+          Hi,{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-bl from-primary from-30% to-accent/10">
+            I&apos;m Robin
+          </span>{" "}
+          👋
         </p>
-        <div className="text-xl opacity-50">
+        <div className="text-xl">
           <p>junior web developer</p>
           <p>business intelligence student</p>
         </div>
@@ -26,21 +31,21 @@ export default function About() {
           <Link
             href={socials.linkedin.link}
             target="_blank"
-            className="opacity-70 hover:opacity-100 transition duration-300"
+            className="hover:text-primary transition duration-200"
           >
             <FaLinkedinIn size={30} />
           </Link>
           <Link
             href={socials.github.link}
             target="_blank"
-            className="opacity-70 hover:opacity-100 transition duration-300"
+            className="hover:text-primary transition duration-200"
           >
             <FaGithub size={30} />
           </Link>
           <Link
             href={socials.email.link}
             target="_blank"
-            className="opacity-70 hover:opacity-100 transition duration-300"
+            className="hover:text-primary transition duration-200"
           >
             <FaRegEnvelope size={30} />
           </Link>
