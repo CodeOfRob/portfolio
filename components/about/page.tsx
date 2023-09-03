@@ -19,6 +19,7 @@ export default function About() {
         <p className="text-4xl font-semibold tracking-wide ">
           Hi,{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-bl from-primary from-30% to-accent/10">
+            {" "}
             I&apos;m Robin
           </span>{" "}
           👋
