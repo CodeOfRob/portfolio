@@ -16,7 +16,7 @@ export default function NavBar() {
     <>
       <div className="hidden sm:block fixed top-0 z-50">
         <div className="mt-14 ml-14 flex flex-col font-semibold tracking-wide uppercase">
-          {navItems?.map((item, idx) => {
+          {navItems?.map((item) => {
             return (
               <Link key={item.name} href={item.href} className="py-2">
                 {item.name}
@@ -45,7 +45,7 @@ export default function NavBar() {
               " z-20 mt-4 flex-col font-semibold tracking-wide uppercase"
             }
           >
-            {navItems?.map((item, idx) => {
+            {navItems?.map((item) => {
               return (
                 <Link key={item.name} href={item.href} className="py-2">
                   {item.name}

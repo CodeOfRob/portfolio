@@ -7,7 +7,7 @@ export default function Projects() {
       <div className="w-full lg:w-3/4 m-auto flex flex-col gap-y-6 text-center">
         <h1 className="text-4xl font-semibold tracking-wide">Projects</h1>
         <div className="flex flex-col gap-4 mx-4">
-          {Object.keys(projects).map((projectKey, idx) => {
+          {Object.keys(projects).map((projectKey) => {
             const project = projects[projectKey];
             return (
               <Link
@@ -21,7 +21,7 @@ export default function Projects() {
                 <div className="flex flex-row gap-4 flex-wrap">
                   {project.skills
                     .toSorted((a, b) => a.localeCompare(b))
-                    .map((skill, idx) => {
+                    .map((skill) => {
                       return (
                         <div
                           key={project.title}
